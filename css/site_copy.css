@@ -1,0 +1,242 @@
+/* .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+  }
+  
+  .grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+    height: 100px;
+     -webkit-transition: height 2s; /* For Safari 3.1 to 6.0 */
+    /* transition: height 2s;
+  }
+  
+  .grid-container > div:hover {
+    height: 200px;
+  }  */
+
+* {
+    border-style: groove;
+    border-top: green;
+}
+  .container {
+    display: flex;
+    height: 50%;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-top: 100px;
+    background-color: rgb(255, 140, 0);
+    padding-bottom: 500%;
+    padding-right: 100%;
+    position: absolute;
+  }
+
+
+/* 
+#first { 
+    height: 66.9%; 
+}
+#second { 
+    height: 26%; 
+}
+#third { 
+    height: 1.8%; 
+}
+#fourth { 
+    height: 1.5%; 
+}  
+#fifth { 
+    height: 0.5%; 
+}    */
+/* #sixth { 
+  height: 0.4%; 
+}
+#seventh { 
+  height: 0.2%; 
+}
+#eighth { 
+  height: 0.2%; 
+}  
+#ninth { 
+  height: 0.2%;
+}
+#tenth { 
+  height: 0.1%; 
+}
+#twelveth { 
+  height: 0.1%; 
+}
+#thirteenth { 
+  height: 0.1%; 
+  }  
+#twentieth { 
+  height: 0.1%;
+}
+#twenty-first { 
+  height: 0.1%; 
+  }  
+#twenty-second { 
+  height: 0.1%;
+
+  } */
+
+
+
+
+  #item1 { 
+    width: 66.9%; 
+  }
+  
+  #item2 { 
+    width: 26%; 
+  }
+  #item3 { 
+    width: 1.8%; 
+  }
+  #item4 { 
+    width: 1.5%; 
+  }  
+  #item5 { 
+    width: 0.5%; 
+  }   
+  
+
+.item {
+    width: 8%;
+    /* height: 0%; */
+    background-color: rgb(255, 140, 0);
+    color: rgb(255, 255, 255);
+    display: block;
+    /* animation-name: slidein; */
+    /* animation-duration: 2s; */
+
+}
+
+div.item {
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%; 
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}    
+
+p {
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%; 
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+/* @keyframes slidein {
+  from {
+    margin-left: 0; 
+  }
+  to {
+    height: 50px;
+  } */
+
+/* 75% {
+
+  height: 150%;
+}
+
+  to {
+    height: 100%;
+  } */
+}
+
+
+
+
+
+  /*
+#first 
+  height: 66.9%; 
+}
+#second { 
+  height: 26%; 
+}
+#third { 
+  height: 1.8%; 
+}
+#fourth { 
+  height: 1.5%; 
+}  
+#fifth { 
+  height: 0.5%; 
+}   
+
+ */
+
+/* div {
+  transition-property: height;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+  transition-delay: 1s;
+} */
+
+/* div {
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%; 
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+} */
+
+div.item:hover::before {
+    background-color: magenta;
+    animation-name: slidein;
+    animation-duration: .3s;
+    transition: width 0.3s;
+    animation-fill-mode: forwards;
+}
+/* 
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%; 
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}     */
+    
+/*  
+
+/* 
+/* .item.showitems{ */
+  

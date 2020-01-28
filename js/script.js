@@ -1,22 +1,35 @@
-console.log("Javascript Loaded");
+console.log("Currency Javascript Loaded");
 
 
-$('.btn').click(function() {
-    $('.text').text('loading . . .');
-    $.ajax({
-      type:"GET",
-      url:"https://domainscope.com/api/v2.1/keywords/popularity/top?&num_samples=10",
-      headers: {"X-DOMAINSCOPE-APIKEY": "329c96468a19f61258526dc0d37c9eb2"},
-      beforeSend: function(xhr) {
-        xhr.setRequestHeader('X-DOMAINSCOPE-APIKEY', '329c96468a19f61258526dc0d37c9eb2');
-    },
-      crossDomain: true,
-    //   success: function(data) {
-    //     $('.text').text(JSON.stringify(data));
-    //   },
-      dataType: 'jsonp',
-    });
-  });
+// $('.btn').click(function() {
+//     $('.item').addClass('showitems');    
+//   });
+
+//console.log("domain length: " + data.length);
+
+let num = 0;
+for (var key in data.rates) {
+  if(num++ < 10){
+    let percentageTextElement = document.querySelectorAll("span")[num-1];
+    let infoElement = document.getElementsByClassName("item" + (num))[0];
+    let barHeightElement = document.getElementsByClassName("height" + (num))[0];
+    let percentage = (data.rates[key] / 400) * 100;
+    console.log("percentage: "+ percentage);
+    // let currencyValue = data.rates[key];
+    // console.log("currencyValue: " + currencyValue);
+    // let elementWidth = currencyValue / 2;
+    // console.log("elementWidth: " + elementWidth);
+    
+    barHeightElement.style.height = percentage + "%";
+    infoElement.innerHTML = key;
+    percentageTextElement.innerHTML = percentage.toFixed(2) + "%";
+  }
+}
+
+
+for(let i = 0; i < 5; i++){
+  
+}
 
 
 // Connect to dataprovider api
